@@ -37,4 +37,6 @@
 </ul><ul>
 <li>✅ JWT-protected routes and APIs</li>
 </ul><h2>Project Status</h2>
+![diagram](https://github.com/user-attachments/assets/ab53cf1a-9fd5-4c08-bc65-bcf66a013a60)
+
 <hr><p>Completed</p>
