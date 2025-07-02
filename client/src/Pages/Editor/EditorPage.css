@@ -1,0 +1,173 @@
+/* Root layout */
+.editor-page-container {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  font-family: "Segoe UI", sans-serif;
+  background: linear-gradient(135deg, #eef2f3, #cfd9df);
+}
+
+/* Header / Top Bar */
+.editor-topbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px 40px;
+  background-color: white;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+  position: sticky;
+  top: 0;
+  z-index: 10;
+}
+
+/* Logo */
+.logo {
+  font-size: 1.4rem;
+  font-weight: bold;
+  color: #4f46e5;
+}
+
+/* Title Input */
+.doc-title {
+  flex: 1;
+  margin: 0 24px;
+  font-size: 1.4rem;
+  font-weight: 500;
+  border: none;
+  border-bottom: 2px solid transparent;
+  background: transparent;
+  padding: 6px 12px;
+  outline: none;
+  transition: border 0.2s, background 0.3s;
+}
+
+.doc-title:focus {
+  border-color: #6366f1;
+  background-color: #f1f5f9;
+  border-radius: 4px;
+}
+
+/* Header Actions Container */
+.header-actions {
+  display: flex;
+  gap: 12px;
+}
+
+/* Share Button */
+.share-button {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  background: linear-gradient(135deg, #10b981, #059669);
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 10px;
+  font-weight: 600;
+  font-size: 1rem;
+  cursor: pointer;
+  box-shadow: 0 4px 12px rgba(16, 185, 129, 0.3);
+  transition: transform 0.2s ease, box-shadow 0.3s ease;
+}
+
+.share-button:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 16px rgba(16, 185, 129, 0.5);
+}
+
+/* Save Button */
+.save-button {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  background: linear-gradient(135deg, #6366f1, #4338ca);
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 10px;
+  font-weight: 600;
+  font-size: 1rem;
+  cursor: pointer;
+  box-shadow: 0 4px 12px rgba(99, 102, 241, 0.3);
+  transition: transform 0.2s ease, box-shadow 0.3s ease;
+}
+
+.save-button:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 16px rgba(99, 102, 241, 0.5);
+}
+
+/* Main Editor Content */
+.editor-content-area {
+  flex: 1;
+  padding: 40px 80px;
+  overflow-y: auto;
+}
+
+/* Editor Style */
+.ProseMirror {
+  min-height: 75vh;
+  background: white;
+  border-radius: 12px;
+  padding: 40px;
+  font-size: 1.1rem;
+  line-height: 1.8;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.05);
+  outline: none;
+}
+
+/* ===== New Styles for Live Status ===== */
+.connection-status {
+  position: fixed;
+  bottom: 20px;
+  left: 20px;
+  background: white;
+  border: 1px solid #e2e8f0;
+  border-radius: 8px;
+  padding: 6px 10px;
+  font-size: 0.85rem;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  z-index: 1000;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+}
+
+.connected {
+  color: #4caf50;
+  font-weight: 600;
+}
+
+.disconnected {
+  color: #f44336;
+  font-weight: 600;
+}
+
+/* ===== Updated Share Panel ===== */
+.share-panel-container {
+  position: fixed;
+  top: 80px;
+  right: 20px;
+  width: 300px;
+  padding: 16px;
+  background: #ffffff;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  z-index: 999;
+  transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+.share-panel-hidden {
+  transform: translateX(120%);
+  opacity: 0;
+  pointer-events: none;
+}
+
+.loading {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  font-size: 1.2rem;
+  color: #64748b;
+}

@@ -1,0 +1,119 @@
+/* Share Panel Container */
+.share-panel-container {
+  position: fixed;
+  bottom: 100px; /* changed from top */
+  right: 20px;
+  width: 260px;
+  padding: 16px 14px;
+  background: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.12);
+  z-index: 999;
+  transition: transform 0.3s ease, opacity 0.3s ease;
+  font-family: "Segoe UI", sans-serif;
+}
+
+/* Header Title */
+.share-panel-container h2 {
+  font-size: 1rem;
+  font-weight: 600;
+  margin-bottom: 12px;
+  color: #374151;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+/* Input & Select */
+.share-panel-container input,
+.share-panel-container select {
+  width: 100%;
+  padding: 8px;
+  font-size: 0.875rem;
+  margin-bottom: 8px;
+  border-radius: 6px;
+  border: 1px solid #d1d5db;
+  outline: none;
+}
+
+.share-panel-container input:focus,
+.share-panel-container select:focus {
+  border-color: #6366f1;
+  box-shadow: 0 0 0 2px rgba(99, 102, 241, 0.2);
+}
+
+/* Share Button */
+.share-panel-container button {
+  width: 100%;
+  padding: 8px 0;
+  background: #4f46e5;
+  color: white;
+  font-weight: 500;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.share-panel-container button:hover {
+  background: #4338ca;
+}
+
+/* Collaborator List */
+.collaborator-list {
+  margin-top: 12px;
+  border-top: 1px solid #e5e7eb;
+  padding-top: 10px;
+}
+
+.collaborator-list h3 {
+  font-size: 0.9rem;
+  font-weight: 600;
+  margin-bottom: 8px;
+  color: #374151;
+}
+
+/* Collaborator Item */
+.collaborator-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: #f9fafb;
+  padding: 6px 8px;
+  border-radius: 6px;
+  margin-bottom: 6px;
+}
+
+.collaborator-info {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.collaborator-avatar {
+  background-color: #d1d5db;
+  color: #374151;
+  font-size: 0.75rem;
+  font-weight: bold;
+  border-radius: 999px;
+  width: 28px;
+  height: 28px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.collaborator-name {
+  font-size: 0.85rem;
+  font-weight: 500;
+  color: #111827;
+}
+
+.collaborator-access {
+  background-color: #e0e7ff;
+  color: #4338ca;
+  font-size: 0.7rem;
+  padding: 3px 8px;
+  border-radius: 999px;
+  text-transform: capitalize;
+}

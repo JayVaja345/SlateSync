@@ -1,0 +1,49 @@
+/* Banner.css */
+.banner {
+  background: linear-gradient(135deg, #3b82f6, #1e40af);
+  color: white;
+  padding: 80px 20px;
+  text-align: center;
+  border-radius: 16px;
+  margin-bottom: 40px;
+}
+
+.banner h1 {
+  font-size: 38px;
+  margin-bottom: 10px;
+}
+
+.banner span {
+  color: #facc15;
+}
+
+.banner p {
+  font-size: 18px;
+  margin-bottom: 20px;
+}
+
+.banner-btn {
+  background-color: #facc15;
+  color: #1e293b;
+  padding: 10px 20px;
+  border-radius: 10px;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+/* Slider cssss */
+
+/* Slider.css */
+.slider {
+  background-color: #f3f4f6;
+  padding: 12px;
+  margin: 0 auto 40px;
+  border-radius: 12px;
+}
+
+.slide-item {
+  margin: 0 40px;
+  font-weight: 500;
+  color: #1e40af;
+  font-size: 16px;
+}

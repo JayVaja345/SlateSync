@@ -1,0 +1,8 @@
+{
+  "dependencies": {
+    "jsonwebtoken": "^9.0.2",
+    "ws": "^8.18.3",
+    "y-websocket": "^3.0.0",
+    "y-websocket-server": "^1.0.2"
+  }
+}
